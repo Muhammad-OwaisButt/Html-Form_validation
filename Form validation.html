@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Form Validation</title>
+</head>
+<style>
+    #main {
+        height: auto;
+        width: 20%;
+        border: 2px solid black;
+        text-align: center;
+        padding: 5%;
+        margin: auto;
+        margin-top: 10%;
+    }
+    input{
+        display: block;
+        padding: 5px;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+</style>
+<body>
+    
+    <!-- a.php demo file -->
+    <div id="main">
+        <form action="a.php" onsubmit="return validate()">
+
+            <input id="_name" type="text" placeholder="Name">
+            <b id="_name-error" style="color: red;"></b>
+
+            <input id="_pass" type="password" placeholder="Password">
+            <b id="_pass-error" style="color: red;"></b>
+
+            <input id="_phone" type="number" placeholder="Phone no.">
+            <b id="_phone-error" style="color: red;"></b>
+
+            <input id="_email" type="text" placeholder="E-mail">
+            <b id="_email-error" style="color: red;"></b>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Js file -->
+    <script src="Form validation.js"></script>
+</body>
+</html>
